@@ -18,6 +18,14 @@ default: &default
   socket: /var/run/mysqld/mysqld.sock
   port: 3307
 
+# default: &default
+#   adapter: mysql2
+#   encoding: utf8
+#   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+#   username: root
+#   password:
+#   socket: /tmp/mysql.sock
+
 development:
   <<: *default
   database: task-manager-api_development
